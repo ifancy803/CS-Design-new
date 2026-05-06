@@ -406,7 +406,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361038798}
   m_CullTransparentMesh: 1
---- !u!28 &623948234
+--- !u!28 &529117317
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -510,7 +510,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _GradientTex:
-        m_Texture: {fileID: 623948234}
+        m_Texture: {fileID: 529117317}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -1483,7 +1483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f668ee7ef56f9d54fa24ab8548a29948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Scene_Page_1.0
+  sceneName: Scene_Page_2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Normal
   m_EditorClassIdentifier: 
   type: 20
-  invert: 1
+  invert: 0
   timeMultiplier: 1
   progressFrom: 0
   progressTo: 1
@@ -51,7 +51,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   gradientMode: 0
   shapeTexture: {fileID: 2800000, guid: 2873235459d4547b58d76a16bc824b5a, type: 3}
-  duration: 1
+  duration: 0.5
   noiseIntensity: 1
   vignetteIntensity: 0
   toonGradientIntensity: 1
