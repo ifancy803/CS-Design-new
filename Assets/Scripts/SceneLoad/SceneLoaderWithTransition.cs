@@ -49,7 +49,7 @@ public class SceneLoaderWithTransition : Singleton<SceneLoaderWithTransition>
 
     IEnumerator FadeEndDelay()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         animator.onTransitionEnd.RemoveListener(FadeEnd);
         animator.profile.invert = true;
         animator.Play();
