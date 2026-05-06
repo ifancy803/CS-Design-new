@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class IndexButton : MonoBehaviour
 {
+    public string sceneName;
+    
     public void GetIndexButtonDown()
     {
-        SceneLoaderWithTransition.Instance.Fade("Scene_Page_1.0");
+        SceneLoaderWithTransition.Instance.Fade(sceneName);
     }
 }
