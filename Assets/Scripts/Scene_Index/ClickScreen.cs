@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class ClickScreen : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public string sceneName;
     void Update()
     {
-        
+        // 检测鼠标左键点击（PC）或触摸屏点击（移动端）
+        if (Input.GetMouseButtonDown(0))
+        {
+            SceneLoaderWithTransition.Instance.Fade(sceneName);
+        }
     }
 }
