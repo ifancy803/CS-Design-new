@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 690718488}
   - component: {fileID: 690718490}
   - component: {fileID: 690718489}
+  - component: {fileID: 690718491}
   m_Layer: 5
   m_Name: shoumenren
   m_TagString: Untagged
@@ -304,6 +305,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690718487}
   m_CullTransparentMesh: 1
+--- !u!114 &690718491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690718487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652506d6961be64d9023feb863f60ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetImage: {fileID: 690718489}
+  frames:
+  - {fileID: 21300000, guid: 2c07666cb76bfea458904acc6f85493c, type: 3}
+  - {fileID: 21300000, guid: ec3c1007281a1f3449e5a218af41022c, type: 3}
+  - {fileID: 21300000, guid: 81f53fa3d69bb8b408d089ef0b00a186, type: 3}
+  - {fileID: 21300000, guid: 6a6406d3ab4e84b418a915fe5ac2f1c9, type: 3}
+  - {fileID: 21300000, guid: db5a0340eafa06e4abb42abb97869b9b, type: 3}
+  - {fileID: 21300000, guid: 7d83746d331e8414fb510600188fd055, type: 3}
+  fps: 5
 --- !u!1 &738391522
 GameObject:
   m_ObjectHideFlags: 0

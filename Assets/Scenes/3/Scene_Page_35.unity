@@ -874,6 +874,7 @@ GameObject:
   - component: {fileID: 1081445819}
   - component: {fileID: 1081445821}
   - component: {fileID: 1081445820}
+  - component: {fileID: 1081445822}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -938,6 +939,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081445818}
   m_CullTransparentMesh: 1
+--- !u!114 &1081445822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081445818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9652506d6961be64d9023feb863f60ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetImage: {fileID: 1081445820}
+  frames:
+  - {fileID: 21300000, guid: 2f17e4f029b0c29479ee469bb674ad2e, type: 3}
+  - {fileID: 21300000, guid: 8d99b5495c0b9174b86aacdb0139af7e, type: 3}
+  - {fileID: 21300000, guid: 940a83e972a68ea4390a7cb9d2e22d86, type: 3}
+  - {fileID: 21300000, guid: 9da53bb8c390ab74293d3cf60d34350e, type: 3}
+  - {fileID: 21300000, guid: f0f49d119684b14478c8b48dab537216, type: 3}
+  - {fileID: 21300000, guid: de1be910582b5344c95882036dce6672, type: 3}
+  - {fileID: 21300000, guid: 5d2ea2fcca4f7a644a2e6e5f3868d9a8, type: 3}
+  - {fileID: 21300000, guid: 0859f6b9ed876e64c8b8cff12636b282, type: 3}
+  - {fileID: 21300000, guid: bb55b410ca344ee4fafe8f551f18e0e4, type: 3}
+  - {fileID: 21300000, guid: 1b1c28a0aaa3f414baa7342378dfe8df, type: 3}
+  - {fileID: 21300000, guid: 74b35ef189dbf2b4998c857f2f97f301, type: 3}
+  - {fileID: 21300000, guid: a71ca23b309e8f047ac620d9888b4f1a, type: 3}
+  - {fileID: 21300000, guid: ef897842afd2ac442bffb20296c2fc50, type: 3}
+  - {fileID: 21300000, guid: 43a8bd16595be9941b3235942e202152, type: 3}
+  - {fileID: 21300000, guid: fe286dbebc6d4c54b902185f181a01fa, type: 3}
+  - {fileID: 21300000, guid: 5930a6a1e1f211f4ebf6e7000473fd60, type: 3}
+  fps: 5
 --- !u!1 &1209877447
 GameObject:
   m_ObjectHideFlags: 0
