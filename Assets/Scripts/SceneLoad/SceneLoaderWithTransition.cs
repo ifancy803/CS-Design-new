@@ -50,9 +50,8 @@ public class ManualTransition : Singleton<ManualTransition>
     IEnumerator FadeEndDelay()
     {
         yield return new WaitForSeconds(1f);
-        animator.sceneNameToLoad = "";
-        animator.profile.invert = true;
         animator.onTransitionEnd.RemoveListener(FadeEnd);
+        animator.profile.invert = true;
         animator.Play();
         animator.autoPlay = false;
     }
