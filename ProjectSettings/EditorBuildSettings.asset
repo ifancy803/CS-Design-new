@@ -39,13 +39,13 @@ EditorBuildSettings:
     path: Assets/Scenes/1/Scene_Page_12.unity
     guid: 817674968338c8840bbd1a5165aebb58
   - enabled: 1
-    path: Assets/Scenes/1/Scene_Page_13.unity
+    path: Assets/Scenes/1/Scene_Page_15.unity
     guid: a5243bb8e7be2574da5010275e9c87cb
   - enabled: 1
     path: Assets/Scenes/1/Scene_Page_14.unity
     guid: 31077e6fbdfc19e47a7faefc569e1527
   - enabled: 1
-    path: Assets/Scenes/1/Scene_Page_15.unity
+    path: Assets/Scenes/1/Scene_Page_13.unity
     guid: 5b12d81785c3d194ba328294e6754bb0
   - enabled: 1
     path: Assets/Scenes/1/Scene_Page_16.unity
