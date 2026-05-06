@@ -2,35 +2,47 @@ using System;
 using System.Collections;
 using TransitionsPlus;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class ManualTransition : MonoBehaviour
+public class ManualTransition : Singleton<ManualTransition>
 {
     public TransitionAnimator animator;
+    public string scene1;
+    public string scene2;
+    
 
-    private void Awake()
+    [ContextMenu("淡入淡出1")]
+    public void StartFade1()
     {
-        StartCoroutine(StartScene());
+        Fade(scene1);
+    }
+    [ContextMenu("淡入淡出2")]
+    public void StartFade2()
+    {
+        Fade(scene2);
     }
 
-    IEnumerator StartScene()
+    protected override void Awake()
     {
         DontDestroyOnLoad(gameObject);
+
+    }
+
+    public void Fade(string sceneName)
+    {
+        animator.gameObject.SetActive(true);
+        animator.enabled = true;
+        animator.sceneNameToLoad = sceneName;
+        animator.onTransitionEnd.AddListener(FadeEnd);
+        animator.progress = 0;
+        animator.Play();
         
-        // 1. 设置进度为 1（完全遮罩/淡出完成）
-        animator.progress = 1f;
-        animator.autoPlay = true;
-        // 2. 等待一小段时间确保渲染
-        yield return null;
-        
-        // 3. 加载场景
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("2");
-        asyncLoad.allowSceneActivation = false;
-        while (asyncLoad.progress < 0.9f) yield return null;
-        asyncLoad.allowSceneActivation = true;
-        yield return null;
-        
-        // 4. 设置进度为 0（淡入完成）
-        animator.progress = 0f;
+    }
+
+    private void FadeEnd()
+    {
+        animator.progress = 0;
+        animator.gameObject.SetActive(false);
     }
 }
