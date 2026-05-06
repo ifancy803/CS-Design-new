@@ -375,7 +375,7 @@ Transform:
   - {fileID: 1526670244}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!28 &832492881
+--- !u!28 &680652064
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -890,6 +890,7 @@ GameObject:
   - component: {fileID: 1482435900}
   - component: {fileID: 1482435899}
   - component: {fileID: 1482435898}
+  - component: {fileID: 1482435902}
   m_Layer: 5
   m_Name: '@Canvas'
   m_TagString: Untagged
@@ -983,6 +984,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1482435902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482435897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f668ee7ef56f9d54fa24ab8548a29948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1526670243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,7 +1298,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _GradientTex:
-        m_Texture: {fileID: 832492881}
+        m_Texture: {fileID: 680652064}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:

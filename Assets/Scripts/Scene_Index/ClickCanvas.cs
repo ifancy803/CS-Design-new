@@ -8,7 +8,7 @@ public class ClickCanvas : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            
+            SceneLoaderWithTransition.Instance.Fade("Scene_Page_1.0");
         }
     }
 }

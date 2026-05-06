@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class ManualTransition : Singleton<ManualTransition>
+public class SceneLoaderWithTransition : Singleton<SceneLoaderWithTransition>
 {
     public TransitionAnimator animator;
     public string scene1;
