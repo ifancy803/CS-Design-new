@@ -422,6 +422,7 @@ GameObject:
   - component: {fileID: 262399731}
   - component: {fileID: 262399730}
   - component: {fileID: 262399732}
+  - component: {fileID: 262399733}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -500,6 +501,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatDistance: 35
   floatSpeed: 2
+--- !u!114 &262399733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262399728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c118323b4dd3f47a0dcc899fd68615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Scene_Page_3
 --- !u!1 &491801260
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +526,7 @@ GameObject:
   - component: {fileID: 491801263}
   - component: {fileID: 491801262}
   - component: {fileID: 491801264}
+  - component: {fileID: 491801265}
   m_Layer: 5
   m_Name: Image (4)
   m_TagString: Untagged
@@ -590,6 +605,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatDistance: 35
   floatSpeed: 2
+--- !u!114 &491801265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491801260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c118323b4dd3f47a0dcc899fd68615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Scene_Page_6
 --- !u!1 &664564463
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +796,7 @@ GameObject:
   - component: {fileID: 903969607}
   - component: {fileID: 903969606}
   - component: {fileID: 903969608}
+  - component: {fileID: 903969609}
   m_Layer: 5
   m_Name: Image (3)
   m_TagString: Untagged
@@ -846,6 +875,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatDistance: 35
   floatSpeed: 2
+--- !u!114 &903969609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903969604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c118323b4dd3f47a0dcc899fd68615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Scene_Page_4
 --- !u!1 &1362188244
 GameObject:
   m_ObjectHideFlags: 0
