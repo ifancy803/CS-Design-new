@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes_Unused/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/1/Scene_Index.unity
+    path: Assets/Scenes/1/Scene_Index_1.unity
     guid: a4b989f3e9fb05344bc3d10df3f67a7a
   - enabled: 1
-    path: Assets/Scenes/1/Scene_Page_1.0.unity
+    path: Assets/Scenes/1/Scene_Page_2.unity
     guid: 1bc7581edae6dde4497816f9d953a43f
   m_configObjects: {}
