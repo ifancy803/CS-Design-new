@@ -33,16 +33,27 @@ public class ManualTransition : Singleton<ManualTransition>
     {
         animator.gameObject.SetActive(true);
         animator.enabled = true;
+        animator.autoPlay = true;
         animator.sceneNameToLoad = sceneName;
+        animator.profile.invert = false;
         animator.onTransitionEnd.AddListener(FadeEnd);
         animator.progress = 0;
         animator.Play();
         
     }
-
+    
     private void FadeEnd()
     {
-        animator.progress = 0;
-        animator.gameObject.SetActive(false);
+        StartCoroutine(FadeEndDelay());
+    }
+
+    IEnumerator FadeEndDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        animator.sceneNameToLoad = "";
+        animator.profile.invert = true;
+        animator.onTransitionEnd.RemoveListener(FadeEnd);
+        animator.Play();
+        animator.autoPlay = false;
     }
 }
