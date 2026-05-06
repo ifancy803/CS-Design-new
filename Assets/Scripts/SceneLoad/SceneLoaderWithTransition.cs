@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class ManualTransition : Singleton<ManualTransition>
+public class SceneLoaderWithTransition : Singleton<SceneLoaderWithTransition>
 {
     public TransitionAnimator animator;
     public string scene1;
@@ -33,16 +33,26 @@ public class ManualTransition : Singleton<ManualTransition>
     {
         animator.gameObject.SetActive(true);
         animator.enabled = true;
+        animator.autoPlay = true;
         animator.sceneNameToLoad = sceneName;
+        animator.profile.invert = false;
         animator.onTransitionEnd.AddListener(FadeEnd);
         animator.progress = 0;
         animator.Play();
         
     }
-
+    
     private void FadeEnd()
     {
-        animator.progress = 0;
-        animator.gameObject.SetActive(false);
+        StartCoroutine(FadeEndDelay());
+    }
+
+    IEnumerator FadeEndDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        animator.onTransitionEnd.RemoveListener(FadeEnd);
+        animator.profile.invert = true;
+        animator.Play();
+        animator.autoPlay = false;
     }
 }
